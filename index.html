@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Container</title>
+    <!-- Bootstrap  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <!-- End of Bootstrap section -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <h1>My Interactive Dashboard</h1>
+    <p>This will turn into a sort of personal project webpage.</p>
+    <script>
+        document.write("This dashboard demonstrates how JavaScript can be used to create interactive websites.")
+    </script>
+    <!-- The <noscript> is for web browsers with JavaScript rendering disabled. -->
+    <noscript>
+        Unfortunately, your web browser does not support JavaScript.
+    </noscript>
+    <!-- Begin container div -->
+    <div class="container">
+    <!-- Begin row div -->
+    <div class="row">
+
+        <!-- Start col div 1. weekly-tasks -->
+        <div class="col" id="weekly-tasks">
+
+            <!-- Start of new div within weekly-tasks div 10.12.2026-->
+            <div id="task-list">
+                <h3>Weekly Task List</h3>
+                <p>Enter a task below to manage your goals</p>
+                <!-- Form 2 Giving it a separate id -->
+                <form id="task-form">
+                    <div>
+                        <!-- Task Input --> 
+                    <label for="task-name">Enter task: </label>
+                    <input type="text" id="task-name" name="task-name">
+                    </div>
+                    <button id="add-task">Add Task</button>
+                </form>
+                <!-- End of form 2-->
+            </div>
+            <!-- End of new div within weekly-tasks div 10.12.2026-->
+            
+                 <!--Link JavaScript script; always a good idead to place this at the end-->
+            <script src="js/task-manager.js"></script>
+        </div>
+        <!-- End col div 1. weekly-tasks -->
+      </div>
+      <!-- Close row div main-->
+
+      </div>
+      <!-- Close container div -->
+</body>
+<!-- Close body -->
+ <!--Close h-->
+ </html>  
