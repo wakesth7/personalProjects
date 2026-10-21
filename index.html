@@ -9,54 +9,47 @@
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <!-- End of Bootstrap section -->
     <link rel="stylesheet" href="css/style.css">
-
 </head>
 
 <body>
-    <h1>My Interactive Dashboard</h1>
-    <p>This will turn into a sort of personal project webpage.</p>
-    <script>
-        document.write("This dashboard demonstrates how JavaScript can be used to create interactive websites.")
-    </script>
-    <!-- The <noscript> is for web browsers with JavaScript rendering disabled. -->
-    <noscript>
-        Unfortunately, your web browser does not support JavaScript.
-    </noscript>
-    <!-- Begin container div -->
+     <!-- Begin container div -->
     <div class="container">
     <!-- Begin row div -->
     <div class="row">
 
-        <!-- Start col div 1. weekly-tasks -->
-        <div class="col" id="weekly-tasks">
-
-            <!-- Start of new div within weekly-tasks div 10.12.2026-->
-            <div id="task-list">
-                <h3>Weekly Task List</h3>
-                <p>Enter a task below to manage your goals</p>
-                <!-- Form 2 Giving it a separate id -->
-                <form id="task-form">
-                    <div>
-                        <!-- Task Input --> 
-                    <label for="task-name">Enter task: </label>
-                    <input type="text" id="task-name" name="task-name">
-                    </div>
-                    <button id="add-task">Add Task</button>
-                </form>
-                <!-- End of form 2-->
-            </div>
-            <!-- End of new div within weekly-tasks div 10.12.2026-->
-            
-                 <!--Link JavaScript script; always a good idead to place this at the end-->
-            <script src="js/task-manager.js"></script>
-        </div>
-        <!-- End col div 1. weekly-tasks -->
+      <!-- Initiate first class col-->
+      <div class="col">
+        <section class="intro">
+          <h2>About me</h2>
+          <p>Turned to coding for the fun of it.</p>
+        </section>
       </div>
-      <!-- Close row div main-->
+      <!-- Close first col class-->
 
-      </div>
-      <!-- Close container div -->
+      <!-- Lets add second col with contact me and a button and add an eventListener to it-->
+       <div class="col">
+        <section class="contact">
+          <div>
+          <h2>Contact</h2>
+          <label for="reach_out">Please enter your email:</label>
+          <input type="text" id ="reach_out" name="reach_out">
+          </div>
+          <!--Submit Button-->   
+          <button id="submit-btn">Submit</button>  
+          <!-- These will serve for the reponses to display-->
+          <p id="display-emailID"></p> 
+        </section>
+        <script src="js/jsfile1.js" defer></script>
+       </div>
+      <!-- Close second col class-->
+
+    </div>
+    <!--container div-->
+    </div>
+    <!--class div-->
 </body>
-<!-- Close body -->
- <!--Close h-->
- </html>  
+</html>
+<!--Closed body and html above-->
+
+
+      
