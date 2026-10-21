@@ -1,0 +1,16 @@
+h1{
+    text-align: center;
+    color: white;
+    background-color: teal;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+form {
+    display:table;
+}
+
+/*dislay two options side by side*/
+.option-menus {
+    display:flex;
+    gap: 24px;
+}
